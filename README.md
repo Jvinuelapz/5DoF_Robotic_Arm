@@ -1,12 +1,12 @@
 # 5-DoF Robotic Arm for Color-Based Sorting
 
-![3D Visualization of the Robotic Arm](images/5dof_Arm.jpg)
+![3D Visualization of the Robotic Arm](images/5DoF_Robotic_Arm.jpg)
 
 This repository contains the documentation and my contributions to a collaborative group project for the "CT7158: Robotic Systems" module at London Metropolitan University. The project involved the complete design, 3D printing, assembly, and programming of a 5-degree-of-freedom robotic arm capable of sorting Skittles by color.
 
 My primary contributions to this project included the **firmware development for the ESP32**, the **custom gripper design**, **servo motor testing**, and the **project documentation**.
 
-▶️ **[Watch the Demonstration on YouTube](https://youtu.be/oouUzXQNhF4)**
+▶️ **[Watch the Demonstration on YouTube](https://youtu.be/oouUzXQNhF4?si=kfHoVpSnmO_adTAg)**
 
 📄 **[View the Full Project Report (PDF)](./Robotics_CSWK.pdf)** for a comprehensive overview of the project, including contributions from all team members.
 
@@ -38,7 +38,7 @@ My primary contributions to this project included the **firmware development for
 
 ## 📁 Repository Structure
 
-* **/Firmware**: Contains the Arduino `.ino` sketch for the ESP32 microcontroller.
-* **/Hardware_Design**: Includes the `.stl` files for 3D printing and the source `.f3d` CAD files.
-* **/Web_Interface**: Contains the `index.html` and `sketch.js` files for the visualization and control panel.
-* **Robotics_CSWK.pdf**: The detailed project report.
+* `/Firmware`: Contains the Arduino `.ino` sketch for the ESP32 microcontroller.
+* `/Hardware_Design`: Includes the `.stl` files for 3D printing and the source `.f3d` CAD files.
+* `/Web_Interface`: Contains the `index.html` and `sketch.js` files for the visualization and control panel.
+* `Robotics_CSWK.pdf`: The detailed project report.
