@@ -41,4 +41,5 @@ My primary contributions to this project included the **firmware development for
 * `/Firmware`: Contains the Arduino `.ino` sketch for the ESP32 microcontroller.
 * `/Hardware_Design`: Includes the `.stl` files for 3D printing and the source `.f3d` CAD files.
 * `/Web_Interface`: Contains the `index.html` and `sketch.js` files for the visualization and control panel.
+* `/images`: Contains the 3D drawings of each component, the final render of the arm, and the visualization shown in this file.
 * `Robotics_CSWK.pdf`: The detailed project report.
