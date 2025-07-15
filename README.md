@@ -8,7 +8,7 @@ My primary contributions to this project included the **firmware development for
 
 ▶️ **[Watch the Demonstration on YouTube](https://youtu.be/oouUzXQNhF4?si=kfHoVpSnmO_adTAg)**
 
-📄 **[View the Full Project Report (PDF)](./Robotics_CSWK.pdf)** for a comprehensive overview of the project, including contributions from all team members.
+📄 **[View the Full Project Report (PDF)](5DoF_Robotic_Arm.pdf)** for a comprehensive overview of the project, including contributions from all team members.
 
 ## ✨ Key Features
 
