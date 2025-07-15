@@ -1,6 +1,6 @@
 # 5-DoF Robotic Arm for Color-Based Sorting
 
-![3D Visualization of the Robotic Arm](images/PCB_3D.png)
+![3D Visualization of the Robotic Arm](images/5dof_Arm.jpg)
 
 This repository contains the documentation and my contributions to a collaborative group project for the "CT7158: Robotic Systems" module at London Metropolitan University. The project involved the complete design, 3D printing, assembly, and programming of a 5-degree-of-freedom robotic arm capable of sorting Skittles by color.
 
