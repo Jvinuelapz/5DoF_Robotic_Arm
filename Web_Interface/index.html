@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <style>
+        * {
+            font-family: Roboto-Regular, Arial, Helvetica, sans-serif; 
+            color: #fff;
+            background-color: #000000;
+        }
+
+        #canvas-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            width: 800px;
+            border: 1px solid rgb(53, 53, 53);
+            margin-bottom: 20px;
+        }
+
+        #gui {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #dark {
+            color: #6e6e6e;
+        }
+
+        #gui span {
+            color: #6e6e6e;
+        }
+
+        #gui label {
+            color: #ffffff;
+        }
+
+        #slider-container {
+            display: flex;
+            justify-content: center;
+            align-items: left;
+            width: 800px;
+            flex-direction: column;
+        }
+
+        #buttons-container {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        #heart-beat {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: #55dd16;
+        }
+
+        input[type=range] {
+            width: 100%;
+            margin: 5px 0;
+        }
+
+        input[type=checkbox] {
+            margin: 5px 0;
+        }
+
+        input[type=text] {
+            width: 400px;
+            margin: 5px 0;
+            font-size: 20px;
+            color: #dadada;
+            background-color: #1b1b1b;
+            border: 1px solid #8f8f8f;
+        }
+
+        button {
+            width: 100px;
+            margin: 5px 0;
+            font-size: 20px;
+            color: #ffffff;
+            background-color: #1b1b1b;
+            border: 1px solid #8f8f8f;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="gui">
+            <h1>Robot arm control panel</h1>
+            <div id="canvas-container"></div> <!-- Canvas will go here -->
+            <div id="slider-container">
+                <span id="dark">Viewport: <span id="fps-value">60</span>fps</span><br>
+                <!-- <label for="motor1">Motor 1 <span id="dark">(<span id="motor1-value">90</span>°)</span></label>
+                <input type="range" id="motor1" min="0" max="180" value="90"> -->
+                <label for="gcode-input">Run G-Code Command:</label>
+                <div id="slider-container", style="display: block;">
+                    <input type="text" id="gcode-input" name="gcode-input" value="G1 A90 B90 C90 D90 E90 F0">
+                    <button id="run-gcode">SEND</button>
+                </div>
+                
+                <div id="buttons-container">
+                    <button id="start-robot">START</button>
+                    <button id="pause-robot">PAUSE</button>
+                    <button id="stop-robot">STOP</button>
+                    <!-- sync with robot cehckbox -->
+                    <input type="checkbox" id="sync-robot" name="sync-robot" value="sync-robot">
+                    <label for="sync-robot">Sync with robot</label>
+                    <div id="heart-beat"></div>
+                </div>
+                <br>
+                <label for="eepos-value">End effector position: &nbsp; <span id="dark"><span id="eepos-value">0</span></span></label>
+            </div>
+        </div>
+    </main>
+    <script src="sketch.js"></script>
+</body>
+</html>
